@@ -16,6 +16,15 @@ export class HomePage {
         sum += letters.charCodeAt(i);
       }
       return sum % 101;
+    };
+    get scoreColor(){
+      if (this.score <=50){
+        return "#000";
+      } else if (this.score <= 80){
+        return "secondary";
+      } else {
+        return "danger";
+      }
     }
 
 }
